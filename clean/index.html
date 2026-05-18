@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>清洁电器｜大盘头部跑量素材 SOP</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f6f8;color:#1a1a1a;line-height:1.7;padding:40px 20px}
+  .wrap{max-width:1200px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.06);overflow:hidden}
+  .hero{background:linear-gradient(135deg,#1e3a5f 0%,#2d5483 100%);color:#fff;padding:48px 56px}
+  .hero .tag{display:inline-block;background:rgba(251,191,36,.2);color:#fbbf24;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.5px;margin-bottom:16px}
+  .hero h1{font-size:34px;font-weight:700;letter-spacing:.5px;margin-bottom:10px}
+  .hero .sub{font-size:15px;opacity:.85}
+  .hero .back{display:inline-block;color:#fbbf24;text-decoration:none;font-size:13px;margin-top:18px;padding:6px 14px;border:1px solid rgba(251,191,36,.4);border-radius:999px}
+  .hero .back:hover{background:rgba(251,191,36,.15)}
+  .body{padding:48px 56px}
+  h2{font-size:22px;font-weight:700;margin:44px 0 18px;padding-left:14px;border-left:4px solid #fbbf24;color:#1e3a5f}
+  h2:first-child{margin-top:0}
+  h3{font-size:17px;font-weight:600;color:#1e3a5f;margin:20px 0 10px}
+  p{margin-bottom:12px;color:#333}
+  .hl{background:linear-gradient(transparent 60%,#fbbf24 60%);font-weight:600;padding:0 2px}
+  .num{color:#fbbf24;font-weight:700}
+  .cat-metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0 8px}
+  .cat-metrics .m{background:#f8f9fb;border:1px solid #eef0f3;border-radius:10px;padding:18px 14px;text-align:center}
+  .cat-metrics .m .n{font-size:24px;font-weight:700;color:#fbbf24}
+  .cat-metrics .m .l{font-size:12px;color:#666;margin-top:4px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:#fff}
+  table th{background:#1e3a5f;color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:13px}
+  table td{padding:12px 14px;border-bottom:1px solid #eee;vertical-align:top}
+  table tr:nth-child(even) td{background:#fafbfc}
+  .sop-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:13.5px;border:1px solid #e0e4ea}
+  .sop-table thead th{background:#1e3a5f;color:#fff;padding:14px 12px;text-align:left;font-size:13px;font-weight:600;border-right:1px solid rgba(255,255,255,.12)}
+  .sop-table thead th:last-child{border-right:none}
+  .sop-table td{padding:14px 14px;border-bottom:1px solid #e0e4ea;border-right:1px solid #e0e4ea;vertical-align:top;line-height:1.65}
+  .sop-table td:last-child{border-right:none}
+  .sop-table tr:last-child td{border-bottom:none}
+  .sop-table .stage{background:#fffbf0;font-weight:700;color:#1e3a5f;width:120px;font-size:14px}
+  .sop-table .stage .tm{display:block;color:#fbbf24;font-size:11.5px;font-weight:600;margin-top:4px;letter-spacing:.5px}
+  .sop-table .must b{color:#b45309}
+  .sop-table .learn li,.sop-table .must li,.sop-table .avoid li{margin-bottom:6px;margin-left:16px}
+  .sop-table .avoid{background:#fef9f4}
+  .sop-table .avoid li{color:#8b4513}
+  .video-card{margin:22px 0;border:1px solid #eef0f3;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+  .vc-head{padding:16px 22px;background:#1e3a5f;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .vc-head .t{font-size:16px;font-weight:600}
+  .vc-head .m{font-size:12px;opacity:.85}
+  .vc-head .m b{color:#fbbf24}
+  .vc-body{padding:20px 22px}
+  .frames{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:14px 0}
+  .frames .fr{position:relative}
+  .frames img{width:100%;height:auto;border-radius:8px;display:block;border:1px solid #eee;aspect-ratio:9/16;object-fit:cover}
+  .frames .lab{position:absolute;left:6px;top:6px;background:rgba(30,58,95,.92);color:#fff;font-size:10px;padding:3px 7px;border-radius:6px;font-weight:600}
+  .frames .desc{font-size:11px;color:#666;margin-top:4px;line-height:1.4;text-align:center;min-height:30px}
+  .footer{padding:24px 56px;background:#fafbfc;color:#888;font-size:12px;text-align:center;border-top:1px solid #eee}
+  @media (max-width:820px){
+    .body,.hero,.footer{padding-left:24px;padding-right:24px}
+    .frames{grid-template-columns:repeat(3,1fr)}
+    .cat-metrics{grid-template-columns:repeat(2,1fr)}
+    .sop-table .stage{width:auto}
+    .sop-table, .sop-table thead, .sop-table tbody, .sop-table tr, .sop-table td, .sop-table th{display:block}
+    .sop-table thead{display:none}
+    .sop-table td{border-right:none}
+    .sop-table tr{margin-bottom:16px;border:1px solid #e0e4ea;border-radius:8px;overflow:hidden}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <span class="tag">数码家电直播大盘 · 头部跑量素材拆解</span>
+    <h1>清洁电器 SOP</h1>
+    <div class="sub">黄金 5 段式 · Top6 逐条关键帧拆解 · 可复制方法论</div>
+    <a class="back" href="../index.html">← 返回类目总览</a>
+  </div>
+  <div class="body">
+    <h2>一、清洁电器类目均值</h2>
+    
+    <div class="cat-metrics">
+      <div class="m"><div class="n">3.68%</div><div class="l">CTR</div></div>
+      <div class="m"><div class="n">43.47%</div><div class="l">3s 快滑率</div></div>
+      <div class="m"><div class="n">1.93%</div><div class="l">浅层 CVR</div></div>
+      <div class="m"><div class="n">¥1117.3</div><div class="l">下单单价</div></div>
+      <div class="m"><div class="n">4.09</div><div class="l">下单 ROI</div></div>
+    </div>
+    <p style="color:#666;font-size:13px;margin-top:6px">说明：下方 Top6 素材逐条表现与类目均值对照，可快速判断每条素材的相对强项。</p>
+    <h2>二、跑量视频黄金五段式 SOP（核心方法论）</h2>
+    <p>所有头部素材叙事结构高度收敛为以下 <b>5 段</b>。每段的"核心 Learning + 必做动作 + 避坑项"拆解为可直接复制的 SOP 表格：</p>
+    <table class="sop-table">
+      <thead><tr>
+        <th style="width:14%">段位</th>
+        <th style="width:28%">核心 Learning</th>
+        <th style="width:34%">必做动作（Checklist）</th>
+        <th style="width:24%">避坑项</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td class="stage">① 钩子<span class="tm">0 – 3s</span></td>
+          <td class="learn">清洁电器钩子的杀手锏是 <span class="hl">"清洁结果可视化"</span>：
+        <ul>
+          <li><b>清洁结果型</b>：地面光亮如镜的反光特写 → "光脚自由"</li>
+          <li><b>极脏对比型</b>：果汁/牛奶/油渍倾倒满地 → 一拖即净</li>
+          <li><b>悬疑钩子型</b>（擦窗机）："天呐天呐"+ 真人惊讶看窗外</li>
+        </ul>
+        类目均价 ¥1117 是全 7 类最高，<span class="hl">视觉证明「值这个价」</span>是核心。</td>
+          <td class="must"><ul>
+          <li>3s 内必出 <b>"清洁前 vs 清洁后"</b> 对比镜头</li>
+          <li>用 <b>家具反光特写</b>（地板像镜子）做"高级感"</li>
+          <li>配 <b>大字标题</b>"光脚自由""感谢苏泊尔"做情感代入</li>
+        </ul></td>
+          <td class="avoid"><ul>
+          <li>避免单产品摆拍开场（无视觉冲击）</li>
+          <li>避免功能字幕过多挤占主画面</li>
+        </ul></td>
+        </tr>
+        <tr>
+          <td class="stage">② 痛点<span class="tm">3 – 10s</span></td>
+          <td class="learn"><span class="hl">"老式打扫的狼狈"</span>是核心痛点：
+        <ul>
+          <li><b>夫妻吵架场景</b>（v01）：老式扫把扫不净 → 满地纸屑+果汁 → 老婆"再拖一遍太费劲"</li>
+          <li><b>多种污渍</b>：奶茶 / 油 / 头发 / 宠物毛 多场景</li>
+          <li><b>窗外脏</b>：擦窗机配合"高楼擦窗危险"危险性</li>
+        </ul></td>
+          <td class="must"><ul>
+          <li>用 <b>真实污渍的极致状态</b>（一地脏）做痛点放大</li>
+          <li>结合 <b>"夫妻吵架/家务推诿"</b> 加生活化</li>
+        </ul></td>
+          <td class="avoid"><ul>
+          <li>过度脏乱画面（审核风险）</li>
+        </ul></td>
+        </tr>
+        <tr>
+          <td class="stage">③ 解药<span class="tm">10 – 25s</span></td>
+          <td class="learn">清洁品类的转化引擎是 <span class="hl">"高客单家居场景"</span>：
+        <ul>
+          <li>欧式家具 / 大理石地板 / 落地窗 — 让产品看起来"配得上 ¥1000+"</li>
+          <li>"添可极客新品真绝了" / "苏泊尔" 强品牌信号</li>
+          <li>真人试用 + 一键启动 + 自动归位的"懒人友好"</li>
+        </ul></td>
+          <td class="must"><ul>
+          <li>必出 <b>欧式/大理石豪宅场景</b>（高客单视觉锚定）</li>
+          <li>必出 <b>品牌 logo</b>+品牌名口播</li>
+          <li>展示 <b>一键启动 / 自动回充</b> 的"零门槛"</li>
+        </ul></td>
+          <td class="avoid"><ul>
+          <li>避免低端家庭场景（与价格不匹配）</li>
+        </ul></td>
+        </tr>
+        <tr>
+          <td class="stage">④ 演示<span class="tm">25 – 90s</span></td>
+          <td class="learn">演示段聚焦 <span class="hl">"清洁全场景 + 自清洁能力"</span>：
+        <ul>
+          <li>多种污渍逐一清理（果汁 / 头发 / 油渍 / 灰尘）</li>
+          <li>清洁完产品自动洗刷的"机器自洁"特写</li>
+          <li>地板瓷砖反光对比镜头</li>
+        </ul></td>
+          <td class="must"><ul>
+          <li>每种污渍配 <b>3-5 秒清洁演示</b> + 一句字幕</li>
+          <li>必出 <b>地板镜面反光</b>结果验证</li>
+          <li>突出 <b>"机器自洗 / 不用洗滚刷"</b>（用户最大痛点）</li>
+        </ul></td>
+          <td class="avoid"><ul>
+          <li>过分技术参数堆砌（用户不懂转速/吸力数值）</li>
+        </ul></td>
+        </tr>
+        <tr>
+          <td class="stage">⑤ 收尾<span class="tm">尾 2-5s</span></td>
+          <td class="learn"><span class="hl">"主妇人设 + 限时福利"</span>：
+        <ul>
+          <li>家庭主妇/妈妈使用得心应手</li>
+          <li>红色字幕 / 直播间引导 / 工厂特价</li>
+        </ul></td>
+          <td class="must"><ul>
+          <li>必出 <b>真实家庭使用场景</b>（不是空房间）</li>
+          <li>必出 <b>价格福利信号</b>（直降 / 满减 / 工厂直发）</li>
+        </ul></td>
+          <td class="avoid"><ul>
+          <li>没有福利信号（高客单转化失败）</li>
+        </ul></td>
+        </tr></tbody>
+    </table>
+    <h2>三、Top 6 跑量素材逐条拆解（含关键帧）</h2>
+    
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#1 无线洗地机（苏泊尔）</div>
+        <div class="m">消耗 <b>6.0万</b> · CTR <b>5.31%</b> · 3s快滑 <b>32.9%</b> · CVR <b>2.51%</b> · 单价 <b>¥608</b> · ROI <b>8.09</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>卫生间地板反光开篇 + "感谢苏泊尔为我实现光脚自由" → 夫妻吵架地上一团乱 + "再拖一遍太费劲" → 阿姨使用洗地机演示 → 镜面地板收尾。</p>
+        <div class="frames"><div class="fr"><div class="lab">0.5s</div><img src="frames/v01_1.jpg"><div class="desc">卫生间镜面地板光脚自由</div></div><div class="fr"><div class="lab">3s</div><img src="frames/v01_2.jpg"><div class="desc">主妇阿姨笑容</div></div><div class="fr"><div class="lab">25%</div><img src="frames/v01_3.jpg"><div class="desc">夫妻吵架满地杂物</div></div><div class="fr"><div class="lab">50%</div><img src="frames/v01_4.jpg"><div class="desc">老式扫把痛苦</div></div><div class="fr"><div class="lab">75%</div><img src="frames/v01_5.jpg"><div class="desc">洗地机演示</div></div><div class="fr"><div class="lab">尾</div><img src="frames/v01_6.jpg"><div class="desc">清洁后镜面收尾</div></div></div>
+        <p><b>Learning：</b><span class="hl">"光脚自由"</span> + 夫妻吵架家务推诿 = 高度生活化的清洁素材模板，转化率达 ROI 4.2+。</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#2 无线洗地机（彩色花砖）</div>
+        <div class="m">消耗 <b>5.4万</b> · CTR <b>3.99%</b> · 3s快滑 <b>50.7%</b> · CVR <b>1.28%</b> · 单价 <b>¥1533</b> · ROI <b>3.00</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>地中海风彩色花砖地面+巧克力液污渍 → "你凭什么说跟我是同款" → 洗地机使用 → 自洁喷水演示 → 真人对比演示。</p>
+        <div class="frames"><div class="fr"><div class="lab">0.5s</div><img src="frames/v02_1.jpg"><div class="desc">彩色花砖污渍</div></div><div class="fr"><div class="lab">3s</div><img src="frames/v02_2.jpg"><div class="desc">凭什么说同款字幕</div></div><div class="fr"><div class="lab">25%</div><img src="frames/v02_3.jpg"><div class="desc">真人手持演示</div></div><div class="fr"><div class="lab">50%</div><img src="frames/v02_4.jpg"><div class="desc">直立自洗</div></div><div class="fr"><div class="lab">75%</div><img src="frames/v02_5.jpg"><div class="desc">清洁后效果</div></div><div class="fr"><div class="lab">尾</div><img src="frames/v02_6.jpg"><div class="desc">产品收尾</div></div></div>
+        <p><b>Learning：</b><span class="hl">彩色花砖+污渍</span>视觉冲击+"凭什么说同款"反向钩子，让低单价杂牌也能跑量。</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#3 擦窗机器人</div>
+        <div class="m">消耗 <b>4.2万</b> · CTR <b>4.08%</b> · 3s快滑 <b>55.7%</b> · CVR <b>1.58%</b> · 单价 <b>¥879</b> · ROI <b>1.99</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>女主葛优瘫看手机+擦窗机自动爬窗作业 → "天呐天呐"惊呼 → 高楼窗户滑行特写 → 真人手持遥控演示。</p>
+        <div class="frames"><div class="fr"><div class="lab">0.5s</div><img src="frames/v03_1.jpg"><div class="desc">女主葛优瘫+擦窗机工作</div></div><div class="fr"><div class="lab">3s</div><img src="frames/v03_2.jpg"><div class="desc">机器人爬窗</div></div><div class="fr"><div class="lab">25%</div><img src="frames/v03_3.jpg"><div class="desc">机器爬升过程</div></div><div class="fr"><div class="lab">50%</div><img src="frames/v03_4.jpg"><div class="desc">女主控制手机</div></div><div class="fr"><div class="lab">75%</div><img src="frames/v03_5.jpg"><div class="desc">清洁后明亮窗户</div></div><div class="fr"><div class="lab">尾</div><img src="frames/v03_6.jpg"><div class="desc">机器人收尾</div></div></div>
+        <p><b>Learning：</b><span class="hl">"懒人在场旁观"</span>+机器人自主作业是擦窗品类的核心叙事 — 卖的是"我不用动"。</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#4 无线洗地机（苏泊尔v2）</div>
+        <div class="m">消耗 <b>3.3万</b> · CTR <b>5.82%</b> · 3s快滑 <b>36.9%</b> · CVR <b>2.79%</b> · 单价 <b>¥601</b> · ROI <b>8.39</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>与 v01 同 IP，再投放变体 → 卫生间镜面 → "光脚自由"字幕 → 夫妻互动 → 多场景洗地。</p>
+        <div class="frames"><div class="fr"><div class="lab">0.5s</div><img src="frames/v04_1.jpg"><div class="desc">卫生间镜面同款钩</div></div><div class="fr"><div class="lab">3s</div><img src="frames/v04_2.jpg"><div class="desc">主妇笑容</div></div><div class="fr"><div class="lab">25%</div><img src="frames/v04_3.jpg"><div class="desc">夫妻互动场景</div></div><div class="fr"><div class="lab">50%</div><img src="frames/v04_4.jpg"><div class="desc">清洁演示</div></div><div class="fr"><div class="lab">75%</div><img src="frames/v04_5.jpg"><div class="desc">对比效果</div></div><div class="fr"><div class="lab">尾</div><img src="frames/v04_6.jpg"><div class="desc">品牌CTA</div></div></div>
+        <p><b>Learning：</b><span class="hl">同 IP 多素材投放</span>是清洁电器跑量的常见手法 — 优秀模板复用 ROI 稳定。</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#5 全屋清洁套装（苏泊尔）</div>
+        <div class="m">消耗 <b>3.1万</b> · CTR <b>4.03%</b> · 3s快滑 <b>59.7%</b> · CVR <b>2.55%</b> · 单价 <b>¥684</b> · ROI <b>6.40</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>落地窗高楼云景大客厅反光特写 → 真人手持洗地机 → 多场景演示（客厅/厨房/卫生间）→ 自动回充收尾。</p>
+        <div class="frames"><div class="fr"><div class="lab">0.5s</div><img src="frames/v05_1.jpg"><div class="desc">大客厅落地窗</div></div><div class="fr"><div class="lab">3s</div><img src="frames/v05_2.jpg"><div class="desc">真人手持产品</div></div><div class="fr"><div class="lab">25%</div><img src="frames/v05_3.jpg"><div class="desc">落地窗反光地板</div></div><div class="fr"><div class="lab">50%</div><img src="frames/v05_4.jpg"><div class="desc">多场景洗地</div></div><div class="fr"><div class="lab">75%</div><img src="frames/v05_5.jpg"><div class="desc">自动回充</div></div><div class="fr"><div class="lab">尾</div><img src="frames/v05_6.jpg"><div class="desc">产品收尾</div></div></div>
+        <p><b>Learning：</b><span class="hl">大平层落地窗云景</span>是该品类视觉资产的最高级表达，强化"高客单也值"。</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#6 洗地机（添可极客版）</div>
+        <div class="m">消耗 <b>3.1万</b> · CTR <b>1.16%</b> · 3s快滑 <b>30.6%</b> · CVR <b>1.26%</b> · 单价 <b>¥1523</b> · ROI <b>3.75</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>欧式古典家具大客厅 + 添可洗地机摆放 + "添可这一次的极客新品真绝了" → 多场景演示 → 自动归位。</p>
+        <div class="frames"><div class="fr"><div class="lab">0.5s</div><img src="frames/v06_1.jpg"><div class="desc">欧式古典客厅</div></div><div class="fr"><div class="lab">3s</div><img src="frames/v06_2.jpg"><div class="desc">添可极客新品字幕</div></div><div class="fr"><div class="lab">25%</div><img src="frames/v06_3.jpg"><div class="desc">真人手持演示</div></div><div class="fr"><div class="lab">50%</div><img src="frames/v06_4.jpg"><div class="desc">清洁过程</div></div><div class="fr"><div class="lab">75%</div><img src="frames/v06_5.jpg"><div class="desc">沙发地板反光</div></div><div class="fr"><div class="lab">尾</div><img src="frames/v06_6.jpg"><div class="desc">产品全家福</div></div></div>
+        <p><b>Learning：</b><span class="hl">欧式古典家具</span>+真人感叹"真绝了"是高客单（添可均价 ¥3000+）的核心心智锚定。</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">数据来源：数码家电直播大盘头部跑量素材库（清洁电器类目 Top6）｜报告生成：2026-05-18</div>
+</div>
+</body>
+</html>

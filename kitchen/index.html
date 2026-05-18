@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>厨房小电｜大盘头部跑量素材 SOP</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f6f8;color:#1a1a1a;line-height:1.7;padding:40px 20px}
+  .wrap{max-width:1200px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.06);overflow:hidden}
+  .hero{background:linear-gradient(135deg,#1e3a5f 0%,#2d5483 100%);color:#fff;padding:48px 56px}
+  .hero .tag{display:inline-block;background:rgba(251,191,36,.2);color:#fbbf24;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.5px;margin-bottom:16px}
+  .hero h1{font-size:34px;font-weight:700;letter-spacing:.5px;margin-bottom:10px}
+  .hero .sub{font-size:15px;opacity:.85}
+  .body{padding:48px 56px}
+  h2{font-size:22px;font-weight:700;margin:44px 0 18px;padding-left:14px;border-left:4px solid #fbbf24;color:#1e3a5f}
+  h2:first-child{margin-top:0}
+  h3{font-size:17px;font-weight:600;color:#1e3a5f;margin:20px 0 10px}
+  p{margin-bottom:12px;color:#333}
+  .hl{background:linear-gradient(transparent 60%,#fbbf24 60%);font-weight:600;padding:0 2px}
+  .num{color:#fbbf24;font-weight:700}
+
+  /* 类目大盘表现卡片 */
+  .cat-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:18px 0 8px}
+  .cat-metrics .m{background:#f8f9fb;border:1px solid #eef0f3;border-radius:10px;padding:18px 16px;text-align:center}
+  .cat-metrics .m .n{font-size:26px;font-weight:700;color:#fbbf24}
+  .cat-metrics .m .l{font-size:12px;color:#666;margin-top:4px}
+
+  /* 普通表格 */
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:#fff}
+  table th{background:#1e3a5f;color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:13px}
+  table td{padding:12px 14px;border-bottom:1px solid #eee;vertical-align:top}
+  table tr:nth-child(even) td{background:#fafbfc}
+
+  /* 黄金五段式大表 */
+  .sop-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:13.5px;border:1px solid #e0e4ea}
+  .sop-table thead th{background:#1e3a5f;color:#fff;padding:14px 12px;text-align:left;font-size:13px;font-weight:600;border-right:1px solid rgba(255,255,255,.12)}
+  .sop-table thead th:last-child{border-right:none}
+  .sop-table td{padding:14px 14px;border-bottom:1px solid #e0e4ea;border-right:1px solid #e0e4ea;vertical-align:top;line-height:1.65}
+  .sop-table td:last-child{border-right:none}
+  .sop-table tr:last-child td{border-bottom:none}
+  .sop-table .stage{background:#fffbf0;font-weight:700;color:#1e3a5f;width:120px;font-size:14px}
+  .sop-table .stage .tm{display:block;color:#fbbf24;font-size:11.5px;font-weight:600;margin-top:4px;letter-spacing:.5px}
+  .sop-table .must{color:#1e3a5f}
+  .sop-table .must b{color:#b45309}
+  .sop-table .learn li,.sop-table .must li,.sop-table .avoid li{margin-bottom:6px;margin-left:16px}
+  .sop-table .avoid{background:#fef9f4}
+  .sop-table .avoid li{color:#8b4513}
+
+  /* 视频卡片 */
+  .video-card{margin:22px 0;border:1px solid #eef0f3;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+  .vc-head{padding:16px 22px;background:#1e3a5f;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .vc-head .t{font-size:16px;font-weight:600}
+  .vc-head .m{font-size:12px;opacity:.85}
+  .vc-head .m b{color:#fbbf24}
+  .vc-body{padding:20px 22px}
+  .frames{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:14px 0}
+  .frames .fr{position:relative}
+  .frames img{width:100%;height:auto;border-radius:8px;display:block;border:1px solid #eee;aspect-ratio:9/16;object-fit:cover}
+  .frames .lab{position:absolute;left:6px;top:6px;background:rgba(30,58,95,.92);color:#fff;font-size:10px;padding:3px 7px;border-radius:6px;font-weight:600}
+  .frames .desc{font-size:11px;color:#666;margin-top:4px;line-height:1.4;text-align:center;min-height:30px}
+
+  .footer{padding:24px 56px;background:#fafbfc;color:#888;font-size:12px;text-align:center;border-top:1px solid #eee}
+
+  @media (max-width:820px){
+    .body,.hero,.footer{padding-left:24px;padding-right:24px}
+    .frames{grid-template-columns:repeat(3,1fr)}
+    .cat-metrics{grid-template-columns:repeat(2,1fr)}
+    .sop-table .stage{width:auto}
+    .sop-table, .sop-table thead, .sop-table tbody, .sop-table tr, .sop-table td, .sop-table th{display:block}
+    .sop-table thead{display:none}
+    .sop-table td{border-right:none}
+    .sop-table tr{margin-bottom:16px;border:1px solid #e0e4ea;border-radius:8px;overflow:hidden}
+    .sop-table td:before{content:attr(data-label);display:block;font-weight:700;color:#1e3a5f;margin-bottom:6px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="tag">数码家电直播大盘 · 头部跑量素材拆解</span>
+    <h1>厨房小电 SOP</h1>
+    <div class="sub">黄金 5 段式 · Top10 逐条关键帧拆解 · 可复制方法论</div>
+    <a class="back" href="../index.html" style="display:inline-block;color:#fbbf24;text-decoration:none;font-size:13px;margin-top:18px;padding:6px 14px;border:1px solid rgba(251,191,36,.4);border-radius:999px">← 返回类目总览</a>
+  </div>
+
+  <div class="body">
+
+    <!-- ===== 一、类目均值 ===== -->
+    <h2>一、厨房小电类目均值</h2>
+    <div class="cat-metrics">
+      <div class="m"><div class="n">4.73%</div><div class="l">CTR</div></div>
+      <div class="m"><div class="n">35.83%</div><div class="l">3s 快滑率</div></div>
+      <div class="m"><div class="n">3.97%</div><div class="l">浅层 CVR</div></div>
+      <div class="m"><div class="n">¥268.8</div><div class="l">下单单价</div></div>
+      <div class="m"><div class="n">3.71</div><div class="l">下单 ROI</div></div>
+    </div>
+    <p style="color:#666;font-size:13px;margin-top:6px">说明：下方 Top10 素材逐条表现与类目均值对照，可快速判断每条素材的相对强项。</p>
+
+    <!-- ===== 二、黄金五段式 SOP 主表 ===== -->
+    <h2>二、跑量视频黄金五段式 SOP（核心方法论）</h2>
+    <p>所有头部素材叙事结构高度收敛为以下 <b>5 段</b>。每段的"核心 Learning + 必做动作 + 避坑项"拆解为可直接复制的 SOP 表格：</p>
+
+    <table class="sop-table">
+      <thead>
+        <tr>
+          <th style="width:14%">段位</th>
+          <th style="width:28%">核心 Learning</th>
+          <th style="width:34%">必做动作（Checklist）</th>
+          <th style="width:24%">避坑项</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="stage" data-label="段位">① 钩子<span class="tm">0 – 3s</span></td>
+          <td class="learn" data-label="核心 Learning">
+            开篇钩子在头部素材中 <span class="hl">二选一</span>：
+            <ul>
+              <li><b>食安恐惧型</b>（果蔬清洗机）：蓝莓霉菌 / 草莓不能水洗 / 农残 — 制造焦虑激发"必须解决"</li>
+              <li><b>美食堆叠型</b>（空气炸锅 / 破壁机）：满桌烤鸡烤排骨蛋挞 / 流油烤肠特写 — 用视觉饱和激发食欲</li>
+            </ul>
+            3s 快滑率最优的素材都用了 <span class="hl">"儿童/家庭温情钩子"</span>。
+          </td>
+          <td class="must" data-label="必做动作">
+            <ul>
+              <li>3s 内出现 <b>品牌 logo</b>（左上角）+ 合规底部说明</li>
+              <li>首帧必须是 <b>食物特写 / 产品痛点 / 主讲人发问</b> 三选一，不要静物摆拍</li>
+              <li>配 <b>黄色大字报标题</b>（8 字以内），如"加大半""方便省心""烤牛排"</li>
+              <li>可借 <b>热点话题</b>（蓝莓霉菌）提升点击率</li>
+            </ul>
+          </td>
+          <td class="avoid" data-label="避坑项">
+            <ul>
+              <li>纯产品摆拍、纯主持人讲话</li>
+              <li>字幕过多压住主体画面</li>
+              <li>&gt;5s 不出钩子，会直接抬高 3s 快滑率</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="stage" data-label="段位">② 痛点<span class="tm">3 – 10s</span></td>
+          <td class="learn" data-label="核心 Learning">
+            用 <span class="hl">"一刀对比"</span> 把问题视觉化放大：
+            <ul>
+              <li><b>清洗机</b>：清水 vs 清洗机 → 水变浑浊 / 浮出黑色脏物</li>
+              <li><b>空气炸锅</b>：老式炸锅烤红薯发黑 vs 新机金黄 / 户外火堆烤青椒焦糊</li>
+              <li><b>破壁机</b>：手洗费时 vs 自动清洗一键搞定</li>
+            </ul>
+            放大痛点的目的是制造 <span class="hl">"非买不可"</span> 的必要性。
+          </td>
+          <td class="must" data-label="必做动作">
+            <ul>
+              <li>用 <b>左右分屏 / 前后对比</b> 一眼看出差异</li>
+              <li>口播用 <b>设问句</b>："你知道吗？""真的不能再用了"</li>
+              <li>引入 <b>角色视角</b>（老人翻车 / 主妇抱怨 / 孩子不爱吃）增强代入感</li>
+              <li>痛点时长 <b>控制在 5 - 7 秒</b>，避免拖沓</li>
+            </ul>
+          </td>
+          <td class="avoid" data-label="避坑项">
+            <ul>
+              <li>慎用"中毒""致癌"等极端词（广告合规风险）</li>
+              <li>避免纯口播讲痛点（无视觉冲击）</li>
+              <li>对比镜头不要美化老方法</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="stage" data-label="段位">③ 解药<span class="tm">10 – 25s</span></td>
+          <td class="learn" data-label="核心 Learning">
+            厨房小电头部素材 <span class="hl">独有的"工厂溯源直播间信任模板"</span>：
+            <ul>
+              <li>场景 = 红色横幅 <b>"工厂溯源福利 / 空气炸锅工厂直发"</b></li>
+              <li>主持 = <b>深色西装男 + 红衣女</b> 组合（或单红衣专家）</li>
+              <li>背景 = 整堵墙的 <b>产品箱堆叠</b>（货架视觉压迫感）</li>
+            </ul>
+            这一段把"信任 + 限时福利"两件事做完，是从种草到下单的关键桥梁。
+          </td>
+          <td class="must" data-label="必做动作">
+            <ul>
+              <li>必出 <b>直播间真人货架画面</b>（至少 1 个镜头）</li>
+              <li>必出 <b>福利信号</b>：限时 / 老板抢福利 / 工厂直发</li>
+              <li>主持人 <b>画像要与目标用户一致</b>（40-55 岁为佳，不用年轻网红）</li>
+              <li>可用 <b>老戏骨代言</b>（如张晨光）增强中老年信任度</li>
+            </ul>
+          </td>
+          <td class="avoid" data-label="避坑项">
+            <ul>
+              <li>不要放纯卖点口播无场景</li>
+              <li>主持人不要用过于年轻潮流的形象</li>
+              <li>不要出现"最便宜""全网最低"等极限词</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="stage" data-label="段位">④ 演示<span class="tm">25 – 90s</span></td>
+          <td class="learn" data-label="核心 Learning">
+            <span class="hl">多场景多品类</span>演示是头部素材的共性：
+            <ul>
+              <li><b>空气炸锅</b>：<span class="num">≥3 种</span>食物 — 牛排 / 整鸡 / 排骨 / 蛋挞</li>
+              <li><b>清洗机</b>：<span class="num">≥3 种</span>果蔬 — 草莓 / 葡萄 / 西红柿 / 叶菜</li>
+              <li><b>破壁机</b>：<b>自动加水 / 自动清洗 / 静音</b> 三大卖点逐一特写</li>
+            </ul>
+            每个卖点配 <b>一句简短字幕</b>（≤ 8 字）+ <b>3-5 秒</b>镜头，节奏紧凑；<b>爸妈上手特别简单</b>是厨电通用强卖点。
+          </td>
+          <td class="must" data-label="必做动作">
+            <ul>
+              <li>每个功能点配 <b>一个特写镜头 + 一句短字幕</b></li>
+              <li>成品必须 <b>出糖色 / 流油 / 金黄酥脆</b> 的诱人质感</li>
+              <li>穿插 <b>透明容器</b>（玻璃杯/清洗碗）让内部工作可见</li>
+              <li>可加 <b>动画示意</b>（远红外发热管 / 热风循环）解释技术</li>
+            </ul>
+          </td>
+          <td class="avoid" data-label="避坑项">
+            <ul>
+              <li>单一场景反复展示（观众疲劳）</li>
+              <li>食物做过头 / 油光过夸张（审核风险）</li>
+              <li>技术参数堆砌（用户不懂）</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="stage" data-label="段位">⑤ 收尾<span class="tm">尾 2-5s</span></td>
+          <td class="learn" data-label="核心 Learning">
+            尾段锁定 <span class="hl">3 件套</span>：
+            <ul>
+              <li><b>产品全家福</b>：主机 + 漏油盘 + 网格烤盘 + 食谱 + 手套（标注"送什么"）</li>
+              <li><b>家庭情感场景</b>：<span class="hl">春节年夜饭 / 全家鼓掌 / 老人小孩开心吃</span>（中老年用户共鸣点）</li>
+              <li><b>直播间引导</b>：字幕"去直播间看看吧 / 喜欢的朋友赶紧抢购"</li>
+            </ul>
+          </td>
+          <td class="must" data-label="必做动作">
+            <ul>
+              <li>全家福镜头 <b>带配件文字标注</b>（主机/漏油盘/食谱）</li>
+              <li>家庭场景首选 <b>春节团圆 / 儿女孝敬父母 / 送礼场景</b></li>
+              <li>直播间入口字幕 <b>贯穿尾段</b>不消失</li>
+              <li>节庆节点可用 <b>礼赠包装特写</b>（如属相礼盒、龙凤红色包装）</li>
+            </ul>
+          </td>
+          <td class="avoid" data-label="避坑项">
+            <ul>
+              <li>尾段没有明确 CTA（白白流失引流）</li>
+              <li>家庭场景换成独居年轻人 / 北欧风（画像错位）</li>
+              <li>没有产品全家福，只有单主机（不突出"套装价值"）</li>
+            </ul>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== 三、Top10 视频拆解 ===== -->
+    <h2>三、Top 10 跑量素材逐条拆解（含关键帧）</h2>
+
+    <!-- k01 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#1 空气炸锅（多功能可视烤箱）</div>
+        <div class="m">消耗 <b>14.2万</b> · CTR <b>3.77%</b> · 3s快滑 <b>40.8%</b> · CVR <b>2.68%</b> · ROI <b>4.20</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>产品堆叠礼盒钩子 → 烤牛排功能演示 → 借势"蓝莓霉菌"食安话题 → 老人买回家场景 → 老式炸锅烤红薯失败对比 → 产品全家福收尾。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k01_1.jpg"><div class="desc">产品堆叠+礼盒钩子</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k01_2.jpg"><div class="desc">烤牛排功能演示</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k01_3.jpg"><div class="desc">蓝莓食安恐惧</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k01_4.jpg"><div class="desc">老人买回家场景</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k01_5.jpg"><div class="desc">老式炸锅红薯失败</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k01_6.jpg"><div class="desc">产品全家福</div></div>
+        </div>
+        <p><b>Learning：</b>借势热点话题（蓝莓霉菌）+ 老人视角引入 = 既提升点击又压住中段流失。</p>
+      </div>
+    </div>
+
+    <!-- k02 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#2 果蔬清洗机</div>
+        <div class="m">消耗 <b>9.2万</b> · CTR <b>6.47%</b> · 3s快滑 <b>19.1%</b> · CVR <b>5.78%</b> · ROI <b>3.07</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b><span class="hl">CTR 6.47%（全类目最高之一）</span>。直播间横幅 + 主持人激情开场 → 满桌美食 → 蓝莓肚脐眼霉菌特写 → 小孩开心吃水果 → 清洗机洗番茄演示 → 破壁机延伸带货。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k02_1.jpg"><div class="desc">直播间溯源福利钩子</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k02_2.jpg"><div class="desc">满桌烤鸡蛋挞美食</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k02_3.jpg"><div class="desc">绿衣女主试吃成品</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k02_4.jpg"><div class="desc">蓝莓发霉特写恐惧</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k02_5.jpg"><div class="desc">阿姨清洗番茄演示</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k02_6.jpg"><div class="desc">破壁机自动清洗延伸</div></div>
+        </div>
+        <p><b>Learning：</b>开篇直接用 <span class="hl">"直播间真人 + 红横幅"</span>，3s 快滑仅 19.1%（全类目最优）；一条素材可多产品带货延伸。</p>
+      </div>
+    </div>
+
+    <!-- k03 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#3 破壁机（自动加水/清洗/静音）</div>
+        <div class="m">消耗 <b>8.5万</b> · CTR <b>1.16%</b> · 3s快滑 <b>3.3%</b> · CVR <b>1.07%</b> · ROI <b>3.73</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b><span class="hl">3s 快滑率仅 3.3%（大盘最稳开篇）</span>。出杯金黄玉米汁特写 → 静音卖点强调 → 容量刻度特写 → 自动上水搅打演示 → 果盘成品 → 直播间引导。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k03_1.jpg"><div class="desc">出杯金黄玉米汁</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k03_2.jpg"><div class="desc">容量刻度特写</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k03_3.jpg"><div class="desc">"声音足够小"</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k03_4.jpg"><div class="desc">"自动上水搅打"</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k03_5.jpg"><div class="desc">出杯成品特写</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k03_6.jpg"><div class="desc">产品+直播间引导</div></div>
+        </div>
+        <p><b>Learning：</b>成品金黄色泽首帧 + 每个特写配一句话，节奏紧凑不拖沓，是 3s 快滑率最优的范式。</p>
+      </div>
+    </div>
+
+    <!-- k04 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#4 空气炸锅（可视烤箱·升级版）</div>
+        <div class="m">消耗 <b>6.7万</b> · CTR <b>4.54%</b> · 3s快滑 <b>55.0%</b> · CVR <b>4.56%</b> · ROI <b>4.54</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>手撕香肠流油"加大半" → 直播间男主持反向钩子"美的我恨你" → 直播间溯源货架 → 大块烤排骨出锅 → 整鸡空气炸（容量大）→ 配件全家福标注。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k04_1.jpg"><div class="desc">手撕香肠+加大半</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k04_2.jpg"><div class="desc">"美的我恨你"反钩子</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k04_3.jpg"><div class="desc">直播间溯源货架</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k04_4.jpg"><div class="desc">大块烤排骨出锅</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k04_5.jpg"><div class="desc">空气炸整鸡（容量大）</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k04_6.jpg"><div class="desc">配件全家福标注</div></div>
+        </div>
+        <p><b>Learning：</b><span class="hl">反向钩子（XX我恨你）+ 食物特写流油</span> 是 3s 快滑率 55% 仍能跑量的关键 — 食欲触发 &gt; 跳出率，ROI 4.54 为 Top 中最高。</p>
+      </div>
+    </div>
+
+    <!-- k05 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#5 果蔬清洗机（红衣专家版）</div>
+        <div class="m">消耗 <b>6.7万</b> · CTR <b>4.77%</b> · 3s快滑 <b>43.0%</b> · CVR <b>6.16%</b> · ROI <b>3.15</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>水池冲水洗水果 → 水流冲洗特写 → 透明碗"看得见的脏" → 春节年夜饭团圆场景 → 阿姨手持产品讲解 → 红衣专家正面发问"草莓千万不要清水洗"。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k05_1.jpg"><div class="desc">水池冲水洗水果</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k05_2.jpg"><div class="desc">水流冲洗特写</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k05_3.jpg"><div class="desc">容量刻度+搅打</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k05_4.jpg"><div class="desc">春节礼盒场景</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k05_5.jpg"><div class="desc">透明清洗碗可视脏</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k05_6.jpg"><div class="desc">双机对比收尾</div></div>
+        </div>
+        <p><b>Learning：</b><span class="hl">权威专家口播 + 食安话题</span> 组合极易跑量，CVR 6.16% 为全类目最高；春节团圆是中老年礼赠最强情感钩。</p>
+      </div>
+    </div>
+
+    <!-- k06 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#6 养生壶/电炖壶（2026年属马礼盒）</div>
+        <div class="m">消耗 <b>6.5万</b> · CTR <b>3.07%</b> · 3s快滑 <b>46.7%</b> · CVR <b>3.22%</b> · ROI <b>3.52</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>男主持货架正面讲解"鱼汤奶昔" → 烤肉切片特写（老式空气炸锅翻车对比）→ 辣椒粉倒盘"方便省心" → 双养生壶煮水果茶/红糖 → 春节年夜饭家庭场景 → 2026 属马礼盒尾段。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k06_1.jpg"><div class="desc">男主持货架讲解</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k06_2.jpg"><div class="desc">烤肉切片特写</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k06_3.jpg"><div class="desc">辣椒粉"方便省心"</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k06_4.jpg"><div class="desc">双养生壶煮茶</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k06_5.jpg"><div class="desc">春节年夜饭团圆</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k06_6.jpg"><div class="desc">2026属马礼盒</div></div>
+        </div>
+        <p><b>Learning：</b><span class="hl">节庆属相礼盒</span> 是中老年礼赠场景的杀手锏，适合春节/年货节爆发期。</p>
+      </div>
+    </div>
+
+    <!-- k07 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#7 空气炸锅（老式翻车对比版）</div>
+        <div class="m">消耗 <b>5.9万</b> · CTR <b>3.46%</b> · 3s快滑 <b>40.2%</b> · CVR <b>4.30%</b> · ROI <b>4.10</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>户外柴火大锅烤青椒（老方法视觉翻车）→ 新机一键操作"爸妈上手特别简单"→ 烤排骨特写 → 配件"主机+漏油盘+网格烤盘+纸质食谱"标注 → 金黄烤鸡腿出锅 → 直播间引导。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k07_1.jpg"><div class="desc">户外柴火烤青椒翻车</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k07_2.jpg"><div class="desc">爸妈上手特别简单</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k07_3.jpg"><div class="desc">烤排骨特写</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k07_4.jpg"><div class="desc">配件全家福标注</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k07_5.jpg"><div class="desc">多食物演示</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k07_6.jpg"><div class="desc">金黄烤鸡出锅</div></div>
+        </div>
+        <p><b>Learning：</b>"<span class="hl">爸妈上手特别简单</span>" 是厨电通用强卖点，特别适配中老年家庭礼赠投放。</p>
+      </div>
+    </div>
+
+    <!-- k08 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#8 空气炸锅（远红外发热管技术版）</div>
+        <div class="m">消耗 <b>5.5万</b> · CTR <b>4.73%</b> · 3s快滑 <b>42.7%</b> · CVR <b>4.19%</b> · ROI <b>4.64</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>产品精致摆台 → 展示纸盒包装（开箱仪式感）→ 大排烤制特写 → 远红外发热管动画示意 → 多场景烹饪 → 直播间引导。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k08_1.jpg"><div class="desc">产品精致摆台</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k08_2.jpg"><div class="desc">食谱配件</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k08_3.jpg"><div class="desc">纸盒开箱</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k08_4.jpg"><div class="desc">烤制食物特写</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k08_5.jpg"><div class="desc">远红外发热管动画</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k08_6.jpg"><div class="desc">产品收尾</div></div>
+        </div>
+        <p><b>Learning：</b>用 <span class="hl">动画示意图</span> 把技术卖点（远红外发热）可视化，解决技术参数堆砌的痛点。</p>
+      </div>
+    </div>
+
+    <!-- k09 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#9 空气炸锅（脆皮烤肉展示版）</div>
+        <div class="m">消耗 <b>4.6万</b> · CTR <b>2.72%</b> · 3s快滑 <b>33.1%</b> · CVR <b>4.98%</b> · ROI <b>4.41</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>脆皮烤肉切片冒蒸汽特写 → 张晨光老戏骨代言引流 → 烤玉米/烤红薯"神器" → 产品镜面效果细节 → 阿姨厨房下厨演示 → 直播间全家福。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k09_1.jpg"><div class="desc">脆皮烤肉切片冒烟</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k09_2.jpg"><div class="desc">张晨光代言</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k09_3.jpg"><div class="desc">"烤玉米烤红薯神器"</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k09_4.jpg"><div class="desc">产品细节</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k09_5.jpg"><div class="desc">厨房演示</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k09_6.jpg"><div class="desc">直播间全家福</div></div>
+        </div>
+        <p><b>Learning：</b><span class="hl">张晨光等老戏骨小窗口代言</span> 是中老年信任感的加分项，CVR 4.98%、ROI 4.41 表现强势。</p>
+      </div>
+    </div>
+
+    <!-- k10 -->
+    <div class="video-card">
+      <div class="vc-head">
+        <div class="t">#10 豆浆机（自动破壁·免手洗）</div>
+        <div class="m">消耗 <b>4.4万</b> · CTR <b>3.57%</b> · 3s快滑 <b>31.7%</b> · CVR <b>3.51%</b> · ROI <b>3.61</b></div>
+      </div>
+      <div class="vc-body">
+        <p><b>叙事路径：</b>主妇倒豆浆入杯 → 张晨光代言小窗口 → 烤猪肋排美食诱惑（带货延伸）→ 产品金属烤盘细节 → 家庭厨房使用 → 直播间收尾。</p>
+        <div class="frames">
+          <div class="fr"><div class="lab">0.5s</div><img src="frames/k10_1.jpg"><div class="desc">主妇倒豆浆</div></div>
+          <div class="fr"><div class="lab">3s</div><img src="frames/k10_2.jpg"><div class="desc">豆浆机特写</div></div>
+          <div class="fr"><div class="lab">25%</div><img src="frames/k10_3.jpg"><div class="desc">烤猪肋排带货延伸</div></div>
+          <div class="fr"><div class="lab">50%</div><img src="frames/k10_4.jpg"><div class="desc">金属烤盘细节</div></div>
+          <div class="fr"><div class="lab">75%</div><img src="frames/k10_5.jpg"><div class="desc">家庭使用场景</div></div>
+          <div class="fr"><div class="lab">尾</div><img src="frames/k10_6.jpg"><div class="desc">直播间收尾</div></div>
+        </div>
+        <p><b>Learning：</b>多产品穿插带货（豆浆机主打 + 烤盘延伸）可以在一条素材中做 <span class="hl">跨品类加购</span>，提高单条素材 GMV。</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    数据来源：数码家电直播大盘头部跑量素材库（厨房小电类目 Top10）｜报告生成：2026-05-11
+  </div>
+
+</div>
+</body>
+</html>

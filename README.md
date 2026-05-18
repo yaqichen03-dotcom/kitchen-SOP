@@ -1,22 +1,21 @@
-# Kitchen SOP
+# 数码家电行业分品类跑量素材 SOP
 
-数码家电直播大盘 · 厨房小电跑量素材 SOP（Top10 拆解 + 黄金五段式方法论）
+> 持续更新 · 内部使用
 
-## 在线预览
+## 在线访问
 
-部署到 GitHub Pages 后访问：
-- https://yaqichen03-dotcom.github.io/kitchen-SOP/
+https://yaqichen03-dotcom.github.io/kitchen-SOP/
 
-## 文件说明
+## 已包含类目
 
-- `index.html` — 主报告页面
-- `frames/` — Top10 视频关键帧截图（60 张）
-- `kitchen-SOP.pdf` — 长图 PDF 版（3.9MB）
-- `kitchen-SOP-longimg.jpg` — 标准长图（1.8MB）
+- [厨房小电](kitchen/) — 空气炸锅 / 果蔬清洗机 / 破壁机
+- [生活小电](life/) — 挂烫机 / 干衣袋 / 艾灸毯
+- [按摩器材](massage/) — AI睡眠仪 / 瘦肚带 / 按摩枕
+- [清洁电器](clean/) — 洗地机 / 擦窗机器人
+- [美容美体](beauty/) — 剃须刀 / V脸仪 / 红光眼罩
+- [车载吸尘器](carvac/) — 9000Pa / 郑国霖代言
+- [智能摄像](camera/) — 隐蔽WiFi / 4G联网
 
-## 启用 GitHub Pages
+## 方法论
 
-1. 进入仓库 Settings → Pages
-2. Source 选择 `Deploy from a branch`
-3. Branch 选择 `main` / 根目录 `/`
-4. Save 后等 1-2 分钟即可访问
+每个类目的 SOP 都遵循 **黄金 5 段式**：钩子（0-3s）→ 痛点（3-10s）→ 解药（10-25s）→ 演示（25-90s）→ 收尾（尾段）
