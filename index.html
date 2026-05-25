@@ -19,8 +19,11 @@
   .hero-stats .s .l{font-size:12px;opacity:.7;margin-top:4px}
 
   .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
-  .cat-card{background:#fff;border-radius:16px;text-decoration:none;color:inherit;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.04);border:1px solid #eef0f3;transition:transform .2s,box-shadow .2s;cursor:pointer;display:flex;flex-direction:column}
+  .cat-card{background:#fff;border-radius:16px;text-decoration:none;color:inherit;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.04);border:1px solid #eef0f3;transition:transform .2s,box-shadow .2s;cursor:pointer;display:flex;flex-direction:column;position:relative}
   .cat-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.1);border-color:#fbbf24}
+  .cat-card-hot{border:2px solid #ef4444;box-shadow:0 6px 20px rgba(239,68,68,.18)}
+  .cat-card-hot:hover{border-color:#dc2626;box-shadow:0 12px 28px rgba(239,68,68,.28)}
+  .hot-badge{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#ef4444 0%,#f97316 100%);color:#fff;font-size:11.5px;font-weight:700;padding:4px 12px;border-radius:999px;z-index:3;box-shadow:0 2px 8px rgba(239,68,68,.4);letter-spacing:.3px}
   .card-head{padding:24px 24px 22px;color:#fff}
   .card-head .icon{font-size:34px;margin-bottom:10px}
   .card-head .title{font-size:22px;font-weight:700;margin-bottom:6px}
@@ -95,7 +98,24 @@
 
   <h2 class="section-title">🎯 分品类 SOP <span class="sub-text">深度拆解 · 黄金 5 段式方法论</span></h2>
   <div class="cat-grid">
+    <a class="cat-card cat-card-hot" href="fan/index.html">
+      <span class="hot-badge">🔥 高热增长</span>
+      <div class="card-head" style="background:linear-gradient(135deg,#22d3ee 0%,#1e3a5f 120%)">
+        <div class="icon">🌀</div>
+        <div class="title">风扇</div>
+        <div class="desc">循环扇 / 复古胡桃木 / 老国货 IP</div>
+      </div>
+      <div class="card-body">
+        <div class="metrics-row">
+          <div class="m"><div class="n">3.8%</div><div class="l">CTR</div></div>
+          <div class="m"><div class="n">4.46%</div><div class="l">CVR</div></div>
+          <div class="m"><div class="n">2.65</div><div class="l">ROI</div></div>
+        </div>
+        <div class="enter">查看 SOP →</div>
+      </div>
+    </a>
     <a class="cat-card" href="kitchen/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#fbbf24 0%,#1e3a5f 120%)">
         <div class="icon">🍳</div>
         <div class="title">厨房小电</div>
@@ -111,6 +131,7 @@
       </div>
     </a>
     <a class="cat-card" href="life/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#a78bfa 0%,#1e3a5f 120%)">
         <div class="icon">👔</div>
         <div class="title">生活小电</div>
@@ -126,6 +147,7 @@
       </div>
     </a>
     <a class="cat-card" href="massage/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#f472b6 0%,#1e3a5f 120%)">
         <div class="icon">💆</div>
         <div class="title">按摩器材</div>
@@ -141,6 +163,7 @@
       </div>
     </a>
     <a class="cat-card" href="clean/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#34d399 0%,#1e3a5f 120%)">
         <div class="icon">🧹</div>
         <div class="title">清洁电器</div>
@@ -156,6 +179,7 @@
       </div>
     </a>
     <a class="cat-card" href="beauty/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#fb7185 0%,#1e3a5f 120%)">
         <div class="icon">💄</div>
         <div class="title">美容美体</div>
@@ -171,6 +195,7 @@
       </div>
     </a>
     <a class="cat-card" href="carvac/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#60a5fa 0%,#1e3a5f 120%)">
         <div class="icon">🚗</div>
         <div class="title">车载吸尘器</div>
@@ -186,6 +211,7 @@
       </div>
     </a>
     <a class="cat-card" href="camera/index.html">
+      
       <div class="card-head" style="background:linear-gradient(135deg,#94a3b8 0%,#1e3a5f 120%)">
         <div class="icon">📹</div>
         <div class="title">智能摄像</div>
@@ -196,21 +222,6 @@
           <div class="m"><div class="n">2.5%</div><div class="l">CTR</div></div>
           <div class="m"><div class="n">2.87%</div><div class="l">CVR</div></div>
           <div class="m"><div class="n">2.45</div><div class="l">ROI</div></div>
-        </div>
-        <div class="enter">查看 SOP →</div>
-      </div>
-    </a>
-    <a class="cat-card" href="fan/index.html">
-      <div class="card-head" style="background:linear-gradient(135deg,#22d3ee 0%,#1e3a5f 120%)">
-        <div class="icon">🌀</div>
-        <div class="title">风扇</div>
-        <div class="desc">循环扇 / 复古胡桃木 / 老国货 IP</div>
-      </div>
-      <div class="card-body">
-        <div class="metrics-row">
-          <div class="m"><div class="n">3.8%</div><div class="l">CTR</div></div>
-          <div class="m"><div class="n">4.46%</div><div class="l">CVR</div></div>
-          <div class="m"><div class="n">2.65</div><div class="l">ROI</div></div>
         </div>
         <div class="enter">查看 SOP →</div>
       </div>
