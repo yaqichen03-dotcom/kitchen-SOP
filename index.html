@@ -37,15 +37,21 @@
   .meta-row b{color:#1e3a5f;font-weight:700}
   .enter{margin-top:auto;padding-top:14px;border-top:1px dashed #eef0f3;color:#fbbf24;font-size:13.5px;font-weight:600;text-align:right}
 
-  /* 顶部置顶卡片样式 */
-  .cat-card-feature{grid-column:1/-1;border:2px solid #fbbf24;position:relative}
+  /* 顶部置顶卡片样式（双周报系列，并排显示） */
+  .cat-card-feature{border:2px solid #fbbf24;position:relative}
   .cat-card-feature::before{content:"⭐ 置顶";position:absolute;top:14px;right:18px;background:#fbbf24;color:#1e3a5f;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;z-index:2}
   .cat-card-feature .card-head{padding:28px 30px 26px}
-  .cat-card-feature .card-head .title{font-size:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .cat-card-feature .card-head .title{font-size:22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .cat-card-feature .badge{display:inline-block;background:rgba(255,255,255,.22);color:#fff;font-size:12px;font-weight:600;padding:2px 10px;border-radius:6px;letter-spacing:.5px}
   .cat-card-feature .card-head .desc{font-size:14px;margin-top:4px}
   .cat-card-feature .metrics-row{grid-template-columns:repeat(3,1fr)}
   .cat-card-feature .metrics-row .n{color:#fbbf24}
+
+  /* 双周报专用网格：2列并排 */
+  .report-grid{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:720px){
+    .report-grid{grid-template-columns:1fr}
+  }
 
   .section-title{font-size:18px;font-weight:700;color:#1e3a5f;margin:32px 0 16px;padding-left:14px;border-left:4px solid #fbbf24}
   .section-title .sub-text{font-size:13px;color:#888;font-weight:400;margin-left:10px}
@@ -78,16 +84,31 @@
   </div>
 
   <h2 class="section-title">📊 行业总览 <span class="sub-text">双周更新 · 跨品类大盘视角</span></h2>
-  <div class="cat-grid">
+  <div class="cat-grid report-grid">
     <a class="cat-card cat-card-feature" href="https://yaqichen03-dotcom.github.io/creative-report/" target="_blank">
       <div class="card-head" style="background:linear-gradient(135deg,#1e3a5f 0%,#fbbf24 120%)">
-        <div class="icon">📊</div>
-        <div class="title">全行业双周报<span class="badge">行业总览</span></div>
+        <div class="icon">📺</div>
+        <div class="title">直播链路跑量素材双周报<span class="badge">直播链路</span></div>
         <div class="desc">数码家电直播链路 · Top50 跑量素材 + 数据 Benchmark + AI 特征提炼</div>
       </div>
       <div class="card-body">
         <div class="metrics-row">
           <div class="m"><div class="n">Top50</div><div class="l">头部素材</div></div>
+          <div class="m"><div class="n">白/品牌</div><div class="l">双赛道</div></div>
+          <div class="m"><div class="n">AI</div><div class="l">特征提炼</div></div>
+        </div>
+        <div class="enter">查看双周报 →</div>
+      </div>
+    </a>
+    <a class="cat-card cat-card-feature" href="https://yaqichen03-dotcom.github.io/creative-report/shop-direct.html" target="_blank">
+      <div class="card-head" style="background:linear-gradient(135deg,#1e3a5f 0%,#22d3ee 120%)">
+        <div class="icon">🛒</div>
+        <div class="title">小店直购链路跑量素材双周报<span class="badge">小店直购</span></div>
+        <div class="desc">数码家电小店直购链路 · Top 跑量素材 + 数据 Benchmark + AI 特征提炼</div>
+      </div>
+      <div class="card-body">
+        <div class="metrics-row">
+          <div class="m"><div class="n">Top</div><div class="l">头部素材</div></div>
           <div class="m"><div class="n">白/品牌</div><div class="l">双赛道</div></div>
           <div class="m"><div class="n">AI</div><div class="l">特征提炼</div></div>
         </div>
